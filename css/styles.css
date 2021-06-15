@@ -402,21 +402,10 @@ p {
   align-items: center;
 }
 
-.client-logo:hover,
-.client-logo:focus,
-.clients-list-item:hover,
-.clients-list-item:focus {
-  fill: var(--pretty-color);
-  border-color: var(--pretty-color);
-}
-
 .clients-list-item {
   width: 170px;
   height: 98px;
   margin-right: 30px;
-  fill: #afb1b8;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 
 .clients-list-item:last-child {
@@ -426,12 +415,25 @@ p {
 .clients-list-link {
   display: flex;
   fill: var(--icons-grey);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .client-logo {
   fill: var(--icons-grey);
   width: 106px;
   margin: 16px 32px;
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--pretty-color);
+}
+
+.clients-list-item a:hover svg,
+.clients-list-item a:focus svg {
+  color: var(--pretty-color);
+  fill: var(--pretty-color);
 }
 
 /* Regular clients */
